@@ -1,5 +1,7 @@
 "use strict";
 
+require("@babel/polyfill");
+
 var _converter = require("./converter");
 
 module.exports = {

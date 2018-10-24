@@ -2,6 +2,10 @@
 
 Node.js wrapper for converting Office files to PDF
 
+[![npm](https://img.shields.io/npm/v/awesome-unoconv.svg?style=flat-square)](http://www.npmjs.com/package/awesome-unoconv)
+[![Travis](https://img.shields.io/travis/zxhaaa6/awesome-unoconv.svg?style=flat-square)](https://travis-ci.org/zxhaaa6/awesome-unoconv)
+[![npm](https://img.shields.io/npm/l/awesome-unoconv.svg?style=flat-square)](https://github.com/zxhaaa6/awesome-unoconv/blob/master/LICENSE)
+
 ## Setup
 
 ### Requirement

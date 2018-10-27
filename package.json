@@ -1,6 +1,6 @@
 {
   "name": "awesome-unoconv",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node.js wrapper for converting Office files to PDF",
   "main": "dist/index.js",
   "engines": {
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "lodash": "^4.17.11",
     "pdf-parse": "^1.0.8"
   },
   "repository": {

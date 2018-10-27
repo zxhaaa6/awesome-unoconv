@@ -28,7 +28,8 @@ $ npm install awesome-unoconv
 
 ## Usage
 
-Convert document to pdf with input and output.
+### 1. Convert document to pdf directly.
+
 ```
 const path = require('path');
 const unoconv = require('awesome-unoconv');
@@ -39,9 +40,53 @@ const outputFilePath = path.resolve('./myDoc.pdf');
 unoconv
   .convert(sourceFilePath, outputFilePath)
   .then(result => {
-    console.log(result);
+    console.log(result); // return outputFilePath
   })
   .catch(err => {
     console.log(err);
   });
 ```
+
+### 2. Convert document to pdf or html with options.
+
+```
+const path = require('path');
+const unoconv = require('awesome-unoconv');
+
+const sourceFilePath = path.resolve('./myDoc.docx');
+const outputFilePath = path.resolve('./myDoc.pdf'); // or 'myDoc.html'
+
+unoconv
+  .convert(inputPath, { output: outputPath, format: 'pdf' })  // or format: 'html'
+  .then(result => {
+    console.log(result); // return outputFilePath
+  })
+  .catch(err => {
+    console.log(err);
+  });
+```
+
+### 3. Convert document to Buffer.
+
+```
+const fs = require('fs');
+const path = require('path');
+const unoconv = require('awesome-unoconv');
+
+const sourceFilePath = path.resolve('./myDoc.docx');
+const outputFilePath = path.resolve('./myDoc.pdf'); // or 'myDoc.html'
+
+unoconv
+  .convert(inputPath, { buffer: true, format: 'pdf' })  // or format: 'html'
+  .then(buffer => {
+    // return Buffer
+    fs.writeFileSync(outputPath, buffer, { encoding: 'utf8' });
+    console.log(`File save at ${outputPath}`);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+```
+
+## Test
+There is a test case inside test folder.

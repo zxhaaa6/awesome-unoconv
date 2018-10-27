@@ -1,6 +1,6 @@
 # awesome-unoconv
 
-Node.js wrapper for converting Office files to PDF
+Node.js wrapper for converting Office files to PDF or HTML
 
 [![npm](https://img.shields.io/npm/v/awesome-unoconv.svg?style=flat-square)](http://www.npmjs.com/package/awesome-unoconv)
 [![Travis](https://img.shields.io/travis/zxhaaa6/awesome-unoconv.svg?style=flat-square)](https://travis-ci.org/zxhaaa6/awesome-unoconv)
@@ -28,7 +28,7 @@ $ npm install awesome-unoconv
 
 ## Usage
 
-### 1. Convert document to pdf directly.
+### Convert document to pdf directly.
 
 ```
 const path = require('path');
@@ -47,7 +47,7 @@ unoconv
   });
 ```
 
-### 2. Convert document to pdf or html with options.
+### Convert document to pdf or html with options.
 
 ```
 const path = require('path');
@@ -66,7 +66,7 @@ unoconv
   });
 ```
 
-### 3. Convert document to Buffer.
+### Convert document to Buffer.
 
 ```
 const fs = require('fs');

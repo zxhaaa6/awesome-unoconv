@@ -30,7 +30,7 @@ $ npm install awesome-unoconv
 
 ### Convert document to pdf directly.
 
-```
+```js
 const path = require('path');
 const unoconv = require('awesome-unoconv');
 
@@ -49,7 +49,7 @@ unoconv
 
 ### Convert document to pdf or html with options.
 
-```
+```js
 const path = require('path');
 const unoconv = require('awesome-unoconv');
 
@@ -68,7 +68,7 @@ unoconv
 
 ### Convert document to Buffer.
 
-```
+```js
 const fs = require('fs');
 const path = require('path');
 const unoconv = require('awesome-unoconv');

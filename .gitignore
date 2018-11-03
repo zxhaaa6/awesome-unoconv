@@ -62,3 +62,6 @@ typings/
 
 # tmp files
 tmp/
+
+# package-lock
+package-lock.json
